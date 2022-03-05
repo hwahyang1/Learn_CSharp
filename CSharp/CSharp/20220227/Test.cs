@@ -8,8 +8,8 @@ namespace CSharp._20220227
 	{
 		static void ClearConsoleWhenEntered()
 		{
-			Console.Write("계속하려면 엔터를 입력하세요.");
-			Console.ReadLine();
+			Console.Write("계속하려면 아무 키나 누르세요.");
+			Console.ReadKey();
 			Console.Clear();
 		}
 

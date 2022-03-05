@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-class mid
+class mid1
 {
 	static void Main3(string[] args)
 	{

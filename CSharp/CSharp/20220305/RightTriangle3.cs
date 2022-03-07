@@ -9,7 +9,7 @@ namespace CSharp._20220305
 		static void Main_20220305_5(string[] args)
 		{
 			/*
-				        *
+						*
 					  * *
 					* * *
 				  * * * *
@@ -21,17 +21,17 @@ namespace CSharp._20220305
 			Console.Clear();
 
 			for (int i = 0; i < size; i++)
-            {
+			{
 				for (int j = 1; j < size - i; j++)
-                {
+				{
 					Console.Write("  ");
-                }
+				}
 				for (int k = 0; k <= i; k++)
-                {
+				{
 					Console.Write("* ");
-                }
+				}
 				Console.WriteLine();
-            }
+			}
 		}
 	}
 }

@@ -21,23 +21,24 @@ namespace CSharp._20220305
 
 			/* 에라토스테네스의 체: https://ko.wikipedia.org/wiki/%EC%97%90%EB%9D%BC%ED%86%A0%EC%8A%A4%ED%85%8C%EB%84%A4%EC%8A%A4%EC%9D%98_%EC%B2%B4 */
 
+			int sum = 0;
 			int[] list = new int[input - 1];
 			for (int i = 2; i <= input; i++) // 리스트 초기화
-            {
+			{
 				list[i - 2] = i;
-            }
+			}
 
 			for (int i = 0; i < list.Length; i++)
-            {
+			{
 				if (list[i] != -1) // 소수가 아니어서 지워진 값은 -1로 처리
-                {
+				{
 					for (int j = 0; j < list.Length; j++) // 처음부터 돌면서 list[i] 의 배수이면(자신 제외) -1로 처리
-                    {
+					{
 						if (list[j] % list[i] == 0 && list[j] != list [i])
-                        {
+						{
 							list[j] = -1;
-                        }
-                    }
+						}
+					}
 				}
 			}
 			Console.Write("2부터 {0} 사이의 소수는 다음과 같습니다: ", input);
@@ -45,12 +46,13 @@ namespace CSharp._20220305
 			{
 				if (list[i] != -1)
 				{
+					sum += 1;
 					Console.Write(list[i]);
 					if (i < list.Length - 1)
 						Console.Write(" ");
 				}
 			}
-			Console.WriteLine();
+			Console.WriteLine(" (총 {0}개)", sum);
 			ClearConsoleWhenEntered();
 
 			/* --------------------------------------- */
@@ -103,9 +105,9 @@ namespace CSharp._20220305
 			// 중간줄
 			Console.Write("*");
 			for (int i = 0; i < size_pyramid; i++)
-            {
+			{
 				Console.Write("**");
-            }
+			}
 			Console.WriteLine();
 
 			// 아랫줄 (역방향)

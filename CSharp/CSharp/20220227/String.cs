@@ -2,25 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
+using CSharp;
+
 namespace CSharp._20220227
 {
 	class String
 	{
-		static void PrintStringArray(string[] arr, bool changeLine = true)
-		{
-			Console.Write("{ ");
-			for (int i = 0; i < arr.Length; i++)
-			{
-				Console.Write(arr[i]);
-				if (i < arr.Length - 1)
-					Console.Write(", ");
-			}
-			Console.Write(" }");
-
-			if (changeLine)
-				Console.Write("\n");
-		}
-
 		static void Main_20220227_1(string[] args)
 		{
 			string str1 = "안녕하세요";
@@ -36,7 +23,7 @@ namespace CSharp._20220227
 			Console.WriteLine("");
 
 			string str3 = "최근 국제유가(두바이유)는 우크라이나 사태 영향으로 배럴당 100달러에 육박하며 고공행진을 이어가고 있다. 27일 한국석유공사 유가 정보 사이트 오피넷에 따르면 수입 원유 기준이 되는 두바이유 가격은 2월 넷째 주 평균 95.0달러로 집계됐다.";
-			PrintStringArray(str3.Split(" ")); // 특정 규칙을 가진 문자열 자르기
+			Duplicate.PrintArray(str3.Split(" ")); // 특정 규칙을 가진 문자열 자르기
 			Console.WriteLine("");
 
 			Console.WriteLine(str1.Substring(2)); // 문자열 자르기 (3번째 글자부터 끝까지 가져오기)

@@ -2,25 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
+using CSharp;
+
 namespace CSharp._20220226
 {
 	class Array
 	{
-		static void PrintIntArray(int[] arr, bool changeLine = true)
-		{
-			Console.Write("{ ");
-			for (int i = 0; i < arr.Length; i++)
-			{
-				Console.Write(arr[i]);
-				if (i < arr.Length - 1)
-					Console.Write(", ");
-			}
-			Console.Write(" }");
-
-			if (changeLine)
-				Console.Write("\n");
-		}
-
 		static void Main_20220226_1(string[] args)
 		{
 			/* 선언 */
@@ -34,9 +21,9 @@ namespace CSharp._20220226
 			int[] e = new int[10] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }; // 대체
 
 			int[] arr = { 2, 4, 6, 8, 10, 12, 14 };
-			PrintIntArray(arr);
+			Duplicate.PrintArray(arr);
 			arr[4] = 100;
-			PrintIntArray(arr);
+			Duplicate.PrintArray(arr);
 			Console.WriteLine("arr1의 길이: {0}\n", arr.Length);
 
 			int[] inputs = new int[5];
@@ -48,7 +35,7 @@ namespace CSharp._20220226
 				sum += inputs[i];
 			}
 			Console.Write("\n입력한 값은 다음과 같습니다: ");
-			PrintIntArray(inputs, false);
+			Duplicate.PrintArray(inputs, false);
 			Console.WriteLine(" (총합 {0})", sum);
 		}
 	}

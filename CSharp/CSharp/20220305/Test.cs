@@ -2,17 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
+using CSharp;
+
 namespace CSharp._20220305
 {
 	class Test
 	{
-		static void ClearConsoleWhenEntered()
-		{
-			Console.Write("계속하려면 아무 키나 누르세요.");
-			Console.ReadKey();
-			Console.Clear();
-		}
-
 		static void Main_20220305_7(string[] args)
 		{
 			Console.Write("입력한 수까지의 소수를 구합니다. 2 이상의 수를 입력하세요: ");
@@ -53,7 +48,7 @@ namespace CSharp._20220305
 				}
 			}
 			Console.WriteLine(" (총 {0}개)", sum);
-			ClearConsoleWhenEntered();
+			Duplicate.ClearConsoleWhenEntered();
 
 			/* --------------------------------------- */
 
@@ -74,7 +69,7 @@ namespace CSharp._20220305
 				}
 				Console.WriteLine();
 			}
-			ClearConsoleWhenEntered();
+			Duplicate.ClearConsoleWhenEntered();
 
 			/* --------------------------------------- */
 

@@ -2,17 +2,12 @@
 using System.Collections.Generic;
 using System.Text;
 
+using CSharp;
+
 namespace CSharp._20220306
 {
 	class Test
 	{
-		static void ClearConsoleWhenEntered()
-		{
-			Console.Write("계속하려면 아무 키나 누르세요.");
-			Console.ReadKey();
-			Console.Clear();
-		}
-
 		static void Main_20220306_1(string[] args)
 		{
 			/*
@@ -55,7 +50,7 @@ namespace CSharp._20220306
 				}
 			}
 			Console.WriteLine("{0}은(는) 2의 제곱수{1}", input1, res ? "입니다." : "가 아닙니다.");
-			ClearConsoleWhenEntered();
+			Duplicate.ClearConsoleWhenEntered();
 
 			//char[] convert_dept = new char[] { 'd', 'q', 'z' }; // 변환 대상 검색어 -> 변환하니까 ppq도 대칭문자로 잡힘. 포기
 			//char[] convert_ariv = new char[] { 'b', 'p', 's' }; // 변환 목적지

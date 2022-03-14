@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Text;
 
-using CSharp;
-
 namespace CSharp._20220305
 {
 	class Test

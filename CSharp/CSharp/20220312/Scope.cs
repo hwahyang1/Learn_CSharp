@@ -20,7 +20,7 @@ namespace CSharp._20220312
 		static void Local_Method()
 		{
 			// 지역 변수 (다른 메소드와 중복되어도 영향X)
-			int local_variable = 10;
+			int local_variable = 30;
 		}
 
 		static void Main_20220312_3(string[] args)

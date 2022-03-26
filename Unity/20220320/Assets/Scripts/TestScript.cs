@@ -12,19 +12,19 @@ public class TestScript : MonoBehaviour
 
 	/* 공통 호출 조건: 게임이 실행 상태여야 함! */
 
-	// 씬 로딩 직후 호출
+	// Script 로딩 직후 호출
 	private void Awake()
 	{
 		Debug.Log("Awake()");
 	}
 
-	// 준비 끝나면 호출 + Object Inspector에 스크립트 체크해주면 호출
+	// 엮여있는 Object가 준비되면 호출
 	private void OnEnable()
 	{
 		Debug.Log("OnEnable()");
 	}
 
-	// 씬 시작되면 호출
+	// Script 시작되면 호출
 	private void Start()
 	{
 		Debug.Log("Start()");
@@ -46,7 +46,7 @@ public class TestScript : MonoBehaviour
 		Debug.Log("LateUpdate()");
 	}
 
-	// 비활성화 되면 호출 + Object Inspector에 스크립트 체크 풀면 호출
+	// 비활성화 되면 호출
 	private void OnDisable()
 	{
 		Debug.Log("OnDisable()");

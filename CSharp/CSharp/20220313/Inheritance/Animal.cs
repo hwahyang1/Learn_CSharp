@@ -19,7 +19,7 @@ namespace CSharp._20220313.Inheritance
 			this.name = name;
 		}
 
-		// Behabior
+		// Behavior
 		public void Hunting()
 		{
 
